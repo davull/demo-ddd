@@ -2,10 +2,12 @@
 
 public struct Money
 {
+    public static Money Zero => new Money(Currency.Unknown, 0m);
+    
     public Currency Currency { get; }
-    public double Amount { get; }
+    public decimal Amount { get; }
 
-    public Money(Currency currency, double amount)
+    public Money(Currency currency, decimal amount)
     {
         Currency = currency;
         Amount = amount;
