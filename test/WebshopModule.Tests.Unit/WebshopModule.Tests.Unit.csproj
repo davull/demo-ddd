@@ -5,6 +5,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <RootNamespace>Webshop.Tests.Unit</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -17,14 +18,10 @@
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="SonarAnalyzer.CSharp" Version="8.44.0.52574">
-            <PrivateAssets>all</PrivateAssets>
-            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        </PackageReference>
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\Webshop\Webshop.csproj" />
+      <ProjectReference Include="..\..\src\WebshopModule\WebshopModule.csproj" />
     </ItemGroup>
     
 </Project>

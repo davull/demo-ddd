@@ -6,6 +6,8 @@ namespace Webshop.Domain;
 
 public class ShoppingCart
 {
+    public static ShoppingCart Empty { get; } = new();
+    
     private readonly IList<ShoppingCartItem> _items = new List<ShoppingCartItem>();
 
     public IEnumerable<ShoppingCartItem> Items => new ReadOnlyCollection<ShoppingCartItem>(_items);
