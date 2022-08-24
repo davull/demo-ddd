@@ -25,8 +25,7 @@ public class CatalogController : ControllerBase
     [HttpGet("groups/{group}/products")]
     public IActionResult GetProductsByGroup(string group)
     {
-        if (!_catalogRepository.GetProductGroups()
-                .Contains(group))
+        if (!_catalogRepository.GetProductGroups().Contains(group))
             return NotFound();
 
         var products = _catalogRepository.GetProductsInGroup(group);

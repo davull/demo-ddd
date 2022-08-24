@@ -1,5 +1,4 @@
 ﻿using System.Net;
-using Bogus;
 using FluentAssertions;
 using Xunit;
 using Xunit.Abstractions;
@@ -15,8 +14,6 @@ public class CatalogControllerTests : IClassFixture<TestFixture>
     {
         _fixture = fixture;
         _output = output;
-
-        Randomizer.Seed = new Random(42);
     }
 
     [Fact]
