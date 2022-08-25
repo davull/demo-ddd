@@ -36,8 +36,7 @@ public class CartControllerTests : IClassFixture<TestFixture>
     {
         // Arrange
         var client = _fixture.GetClient();
-
-        // - Fill cart
+        // Fill cart
         await PutItemIntoCart(client, ean: "2253325085315");
         await PutItemIntoCart(client, ean: "0320704074542", quantity: 2);
 

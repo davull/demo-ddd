@@ -22,4 +22,5 @@ public enum IdentifiableFeature
     Unknown = 0,
     None = 1,
     Gtin = 2,
+    Guid = 3,
 }
